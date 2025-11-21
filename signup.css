@@ -1,0 +1,89 @@
+html{
+    color: #ffffff;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-image: url(pexels-francesco-ungaro-281260.jpg);
+    background-position: center;
+    background-size: cover;
+}
+input{
+    border-radius: 2px;
+    margin-bottom: 4px;
+    border-style: ridge;
+}
+input:focus{
+    border-color: #0400fd;
+    background-color: rgb(215, 231, 248);
+    box-sizing: border-box;
+}
+button{
+    margin-top: 10px;
+    position: relative;
+    margin-left: 60px;
+}
+a{
+    color: #ffffff;
+    font-weight: bold;
+}
+a:hover{
+    color: #660ff1;
+}
+button{
+    background-color: #0db31a;
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: 160px;
+}
+label[for="username"] {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+label[for="username"] svg {
+    fill: #12a5be;    
+    width: 15px;
+    height: 15px;
+}
+label[for="email"] {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+label[for="email"] svg {
+    fill: #12a5be;    
+    width: 15px;
+    height: 15px;
+}
+label[for="password"] {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+label[for="password"] svg {
+    fill: #12a5be;    
+    width: 15px;
+    height: 15px;
+}
+label[for="repeat-password"] {
+    display: inline-block;
+    margin-right: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+label[for="repeat-password"] svg {
+    fill: #12a5be;    
+    width: 15px;
+    height: 15px;
+}

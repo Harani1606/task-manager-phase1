@@ -1,0 +1,215 @@
+body{
+  background-image:url(pexels-francesco-ungaro-281260.jpg) ;
+  display: flex;
+}
+h1{
+    color: #4c00fd;
+    font-weight: bolder;
+}
+.task-manager {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #9ce3ff;
+  border: 1px solid #6b0fff;
+  border-radius: 10px;
+}
+
+input {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border-color: #1100fd;
+}
+
+button {
+  margin-top: 20px;
+  margin-left: 280px;
+  padding: 10px 15px;
+  color: #ffffff;
+  font-weight: bolder;
+  background-color: #18b613;
+  border-color: #ffffff;
+}
+
+#taskList li {
+  background-color: #fff;
+  border: 2px solid #fd7200;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 10px;
+  color: #2b1818;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: static;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+#taskList li em {
+  color: #000000;
+  font-style: normal;
+}
+#taskList li{
+  list-style-type: none;
+  margin-left: -40px;
+}
+li::before{
+  content:"🎯";
+}
+
+#clearAllBtn {
+  background-color: #fd7200;
+  margin-left: 0%;
+  margin-bottom: 60px;
+}
+#clearAllBtn:hover{
+  background-color: #1316b6;
+}
+#addTaskBtn:hover{
+  background-color: #1a7e16;
+}
+
+li button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.editBtn {
+  background-color: #0d24f8de;
+  color: rgb(255, 255, 255);
+  margin-left: 80px;
+}
+
+.deleteBtn {
+  background-color: #ff3333;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.editBtn:hover {
+  background-color: #d39e00;
+}
+
+.deleteBtn:hover {
+  background-color: #b71c1c;
+}
+
+#taskDate{
+  background-color: rgb(14, 17, 207);
+  color: beige;
+}
+
+#taskTime{
+  background-color: rgb(14, 17, 207);
+  color: azure;
+}
+
+.completeBtn{
+  background-color: #c77f20;
+  color: azure;
+}
+.completeBtn:hover{
+  background-color: #f1841e;
+}
+label[for="clearAllBtn"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 250px;
+    cursor: pointer;
+    background-color: #fd7200;
+}
+label[for="clearAllBtn"] svg {
+    fill: #ffffff;
+    padding-top: 3px;    
+    width: 30px;
+    height: 30px;
+}
+label[for="clearAllBtn"] svg:hover {
+  background-color: #1316b6;
+}
+#menuBtn {
+  background-color: #fd7200;
+  vertical-align: middle;
+}
+
+#menuBtn:hover {
+  background-color: #1316b6;
+}
+
+label[for="menuBtn"] {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #fd7200;
+}
+
+label[for="menuBtn"] svg {
+  fill: #ffffff;
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+}
+
+label[for="menuBtn"],
+#menuBtn {
+  display: inline-block;
+  margin: 0 5px; 
+}
+label[for="menuBtn"] svg:hover{
+  background-color: #1316b6;
+}
+
+label[for="home"] {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fd7200;
+    margin-left: 250px;
+}
+label[for="home"] svg {
+    fill: #ffffff;
+    padding-top: 3px;    
+    width: 30px;
+    height: 30px;
+}
+label[for="home"] svg:hover {
+  background-color: #1316b6;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 5;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* hidden at first */
+  width: 250px;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  transition: left 0.3s ease;
+}
+#closeSidebar {
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+}
+#closeSidebar:hover{
+  background-color: #b71c1c;
+}
